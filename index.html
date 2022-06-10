@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>ListAR</title>
+</head>
+<body>
+    
+<main>
+    <section class="section-center container light-mode">
+        <!-- form -->
+
+        <form class="form-shop">
+          <p class="alert"></p>
+          <h3 class="text-center h1">Mi lista</h3>
+        <div class="form-control d-flex justify-content-between mb-5">
+            <input type="text"  id="items" placeholder="ej. Arroz 250gr" />
+            <button class="submit-btn btn btn-success btn-lg">Agregar</button>
+          </div> 
+        </form>
+
+        <!-- list -->
+        <div class="list-container">
+          <div class="items-shop-list"></div>
+    
+          <div class="d-flex justify-content-center pt-3">
+          <button type="button" class="clear-btn btn-danger btn-lg">borrar todos los items</button>
+          </div>
+        </div>
+
+        <aside class="d-flex justify-content-between align-items-center pt-5">
+          <div>
+            <div>
+            <input type="button" value="🌞" id="light" name="lightmode" class="btn">
+            <label for="lightmode">Light Mode</label>
+            </div>
+            <div>
+            <input type="button" value="🌑" id="dark" name="darkmode" class="btn"> 
+            <label for="darkmode">Dark Mode</label> 
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <form action="" id="reset">
+            <input type="text" id="ciudad" class="form-control" placeholder="Escribe una ciudad" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-primary" id="btnTemp" type="button" id="button-addon2">Mostrar temperatura actual</button>  
+          </form>
+        </div>
+      </aside>
+      <aside>
+        <div class="d-flex justify-content-end pt-2">
+          <output>
+            <p id="temperatura"></p>
+          </output>
+        </div>
+      </aside>
+      </section>
+</main>
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./main.js"></script> 
+
+   
+</body>
+</html>
